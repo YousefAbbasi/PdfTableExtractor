@@ -8,4 +8,4 @@ Main file: app.py
 
 helper files: connection_utilities.py , extraction_utilities.py
 
-containerization: python 3.8.13 and use requirements.txt file provided.
+containerization: python 3.8.13 plus requirements.txt for dependencies.
