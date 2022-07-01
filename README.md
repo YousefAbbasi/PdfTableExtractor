@@ -7,3 +7,5 @@ You upload one or more pdf files. The app finds pages that are relevant based on
 Main file: app.py
 
 helper files: connection_utilities.py , extraction_utilities.py
+
+containerization: python 3.8.13 and use requirements.txt file provided.
