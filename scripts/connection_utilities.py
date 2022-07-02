@@ -1,4 +1,4 @@
-# Oxford US Industrial PDF Extraction Web-App
+# US Industrial PDF Extraction Web-App
 
 #############
 # LIBRARIES #
