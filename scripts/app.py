@@ -1,4 +1,4 @@
-# Oxford US Industrial PDF Extraction Web-App
+#US Industrial PDF Extraction Web-App
 
 #############
 # LIBRARIES #
@@ -138,7 +138,6 @@ def func1(PDF_Path,progress_bar_placeholder):
 
 progress_bar_placeholder = st.empty()
 if not st.session_state.initial_files:
-    st.sidebar.image("images/OxfordLogo.png", use_column_width=True)
     files = st.sidebar.file_uploader('Upload your file here',type=['pdf'], accept_multiple_files=True, key='testuploader')
     st.session_state.initial_files = files
     file_loading_bar_init = 0
@@ -421,7 +420,6 @@ else:
     
     # Landing page (when files have not yet been uploaded)
     cols = st.columns(3)
-    cols[1].image("images/OxfordIndustrial.jpg")
     st.markdown("<h3 style='text-align: center; color: grey; font-size:20px;'>Upload a property memo to extract comps analysis information!</h3>", unsafe_allow_html=True)
     st.markdown('___')
     st.write('Upload PDFs using the dynamic upload tool at the top of the sidebar on the left side of the page.')
