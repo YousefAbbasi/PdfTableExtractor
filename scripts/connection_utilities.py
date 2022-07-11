@@ -17,15 +17,6 @@ import pyodbc
 # CONNECTION SETTINGS #
 #######################
 
-# Configure ODBC options
-drivers = [item for item in pyodbc.drivers()]
-driver = drivers[-1]
-conn = pyodbc.connect(f'DRIVER={driver};SERVER=oxaccdatapldevsql01.database.windows.net;DATABASE=Oxford_Retail_Dev;UID=pibo_user;PWD=Qs485%deV80', autocommit = True)
-cursor = conn.cursor()
-
-## ADLS Connection Settings
-conn_str = "DefaultEndpointsProtocol=https;AccountName=oxaccamldst01;AccountKey=bEIdIQ1PdwlpmcLNw7ciqM1LrphX0sL/DkljqHAfmrsOYZvyf02exGrrBrjV6m/SMi0faLsYg4mFPTwAuIKANw==;EndpointSuffix=core.windows.net"
-blockblobservice = BlobServiceClient.from_connection_string(conn_str)
 
 ########################
 # CONNECTION FUNCTIONS #
