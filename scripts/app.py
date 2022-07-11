@@ -21,7 +21,6 @@ from ast import literal_eval
 #from functions import pdf_converter
 from PyPDF2 import PdfFileReader
 from extraction_utilities import Page, display_page_as_canvas, get_extraction_param_values, display_tables, key_generator, p_title, img_to_bytes, save_uploadedfile, structure_data
-from connection_utilities import AppendTableSQLDB, UploadPDFtoADLS, CloseCursor
 import numpy as np
 import datetime
 import pdfplumber
@@ -340,7 +339,7 @@ if len(st.session_state.f_names) !=0:
             processed_data = structure_data(data, comps_type)
 
             # Send to SQL DB
-            AppendTableSQLDB(processed_data, comps_type)
+            #AppendTableSQLDB(processed_data, comps_type)
 
             # Display submitted data
             st.markdown("<h3 style='text-align: left; color: #35495A; font-size:20px;'>Processed Extracted \
